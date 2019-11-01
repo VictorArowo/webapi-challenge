@@ -24,15 +24,27 @@ In this challenge, create a web API around the following resources: `Projects` a
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
-- [ ] Mention two parts of Express that you learned about this week.
+- [x] Mention two parts of Express that you learned about this week.
 
-- [ ] Describe Middleware?
+I learnt how middlewares play a huge role in express applications, as they are basically combinations on middlewares in a particular order.
 
-- [ ] Describe a Resource?
+I also learnt the ease of use express brings in building node applications.
 
-- [ ] What can the API return to help clients know if a request was successful?
+- [x] Describe Middleware?
 
-- [ ] How can we partition our application into sub-applications?
+Middlewares in express applications are functions which have access to the request and response object, and are able to modify either the request or the response. They are also able to terminate the operation at any pint, and finally they are able to call any other middlewares passing in both the request and the response.
+
+- [x] Describe a Resource?
+
+A resource essentially is a unit of data in an application. It describes some piece of data available in the application.
+
+- [x] What can the API return to help clients know if a request was successful?
+
+With express applications, you are able to return a response code giving more information about the operation performed. Thus on a successful operation a status code in the 2xx range should be sent.
+
+- [x] How can we partition our application into sub-applications?
+
+Express has a handly `use()` method which enables us to split up our application by resources, and simply interconnect them in a central file.
 
 ## Project Setup
 
